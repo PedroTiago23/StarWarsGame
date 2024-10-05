@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Star Wars</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="space-background">
+        <div class="menu-container">
+            <h1 class="title">Star Wars</h1>
+            <ul class="menu">
+                <li><a href="index.html" class="menu-item selected" id="novo-jogo">Jogar</a></li>
+                <li><a href="#" class="menu-item" id="carregar-jogo">Carregar Jogo</a></li>
+                <li><a href="#" class="menu-item" id="opcoes">Opções</a></li>
+                <li><a href="#" class="menu-item" id="sair">Sair</a></li>
+            </ul>
+        </div>
+        <div class="sound-icon" id="sound-icon" onclick="toggleSound()">
+            <img src="images/com-som.png" alt="Som" id="sound-img">
+        </div>
+    </div>
+    <audio id="game-music" loop>
+        <source src="audio/music.mp3" type="audio/mp3">
+        Seu navegador não suporta a reprodução de áudio.
+    </audio>
+    <script src="script2.js"></script>
+    <script>
+        window.onload = function() {
+            gameMusic.play();
+        }
+    </script>
+</body>
+</html>
