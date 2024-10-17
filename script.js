@@ -9,7 +9,7 @@ let message = document.querySelector('.message');
 let score_title = document.querySelector('.score_title');
 
 let game_state = 'Start';
-let maxScore = 5; // Pontuação máxima
+let maxScore = 24; // Pontuação máxima
 let gate_generated = false; // Flag para saber se o "gate" final foi gerado
 let last_pipe_x = 0; // Para armazenar a posição do último cano gerado
 
