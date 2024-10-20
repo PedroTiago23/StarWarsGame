@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"/>
     <title>Parabéns!!!</title>
     <style>
         body {
@@ -22,9 +22,26 @@
         h1 {
             text-align: center;
         }
+
+        .video {
+            border: 3px solid #ffcc00;
+
+        }
     </style>
 </head>
 <body>
-    <h1>Alguma mensagem muito legal</h1>
+    <div class="video">
+         <video controls preload="auto" >
+        <source src="video/convite_video.mp4" type="video/mp4">
+        <source src="video/demo.webm" type="video/webm">
+        <source src="video/demo.ogv" type="video/ogg">
+        <object>
+          <embed src="demo.mp4" type="application/x-shockwave-flash" 
+          allowfullscreen="false" allowscriptaccess="always">  		
+        </object>
+        Formato não suportado  
+      </video>
+    </div>
+   
 </body>
 </html>

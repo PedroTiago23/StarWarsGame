@@ -50,6 +50,7 @@ function resetGame() {
 }
 
 function play() {
+    background_music.currentTime = 0
     background_music.play()
     let pipe_separation = 0;
     let pipe_gap = 35; // Distância normal entre canos
@@ -138,7 +139,7 @@ function play() {
         let gate = document.createElement('div');
         gate.className = 'pipe_sprite';
         gate.style.top = '30vh'; // Posição do "gate"
-        gate.style.left = (parseFloat(last_pipe_x) + 1200) + 'px'; // Distância maior entre o último cano e o "gate"
+        gate.style.left = (parseFloat(last_pipe_x) + 1500) + 'px'; // Distância maior entre o último cano e o "gate"
         gate.increase_score = '0'; // Não contar pontos para o "gate"
 
         document.body.appendChild(gate);
